@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category ID</th>
+        <th>Action</th>
+    </tr>
+    <tbody>
+    <tr th:each="product : ${product}">
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.name}"></td>
+        <td th:text="${category.id}"></td>
+        <td>
+            <button>
+                <a th:href="@{product/form/{id} (id = ${product.id})}">Update</a>
+            </button>
+        </td>
+        <td>
+            <form th:href="@{/product/delete/{id} (id = ${product.id})}" method="post">
+                    <input type="submit" value="delete">
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

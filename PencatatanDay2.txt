@@ -1,0 +1,22 @@
+Pencatatan Day2
+
+Penamaan File untuk springboot ini yaitu :
+Repository -> (NamaModel)(Repository)
+		ex : CategoryRepository
+Service -> (NamaModel)(Service)
+		ex : CategoryService -> Untuk yang bentuknya (interface)
+	   (NamaModel)(ServiceImpl)
+		ex : CategoryServiceImpl -> Untuk yang implementasinya bentuk (class)
+Controllers -> (NamaModel)(Controller)
+		ex: CategoryController
+share materi : 
+- List : https://www.javatpoint.com/collections-in-java
+- OOP : https://www.javatpoint.com/java-oops-concepts
+- Autowired (DI) : https://www.baeldung.com/spring-autowire
+	dependensi injektion itu apa ya ?
+- Abstraction (Fully Implemented dan Partial Implemented)
+
+OS : Windows
+BIT : 64bit
+
+JDK Windows 64bit : https://download.oracle.com/java/17/archive/jdk-17.0.5_windows-x64_bin.exe
